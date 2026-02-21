@@ -1,5 +1,16 @@
-# 將 'tmux' 宣告為偽目標，因為它是一個動作，而非一個檔案。
-.PHONY: tmux
+.PHONY: tmux install-focus uninstall-focus help
+
+# --- 預設目標 ---
+help:
+	@echo "Makefile 用法:"
+	@echo "  make tmux            - 設定 Tmux 環境。"
+	@echo "  make install-focus   - 安裝或更新 'focus' 腳本。"
+	@echo "  make uninstall-focus - 移除 'focus' 腳本。"
+
+
+# ==============================================================================
+# => Tmux
+# ==============================================================================
 
 # --- 變數 ---
 TPM_DIR    := $(HOME)/.tmux/plugins/tpm
@@ -28,3 +39,25 @@ tmux:
 	@tmux source-file $(TMUX_CONF) > /dev/null 2>&1 || echo "ⓘ 注意：tmux 伺服器未運行。請啟動 tmux 以使更改生效。"
 
 	@echo "==> ✅ Tmux 設定完成！"
+
+
+# ==============================================================================
+# => Focus Tool
+# ==============================================================================
+
+# --- 變數 ---
+FOCUS_SCRIPT_NAME := focus
+FOCUS_INSTALL_PATH := /usr/local/bin/$(FOCUS_SCRIPT_NAME)
+FOCUS_LOCAL_SCRIPT := $(FOCUS_SCRIPT_NAME)
+
+# --- 目標 ---
+install-focus:
+	@echo "==> 🚀 正在安裝/更新 'focus' 腳本到 $(FOCUS_INSTALL_PATH)..."
+	@sudo cp $(FOCUS_LOCAL_SCRIPT) $(FOCUS_INSTALL_PATH)
+	@sudo chmod +x $(FOCUS_INSTALL_PATH)
+	@echo "==> ✅ 'focus' 腳本安裝/更新完成！"
+
+uninstall-focus:
+	@echo "==> 🗑️ 正在從 $(FOCUS_INSTALL_PATH) 移除 'focus' 腳本..."
+	@sudo rm -f $(FOCUS_INSTALL_PATH)
+	@echo "==> ✅ 'focus' 腳本已移除。"

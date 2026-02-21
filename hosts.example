@@ -1,0 +1,76 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+# ===== YouTube =====
+# 127.0.0.1 youtube.com # focus
+# 127.0.0.1 www.youtube.com # focus
+# 127.0.0.1 m.youtube.com # focus
+# 127.0.0.1 youtu.be # focus
+# 127.0.0.1 i.ytimg.com # focus
+# 127.0.0.1 s.ytimg.com # focus
+
+# ===== Facebook =====
+# 127.0.0.1 facebook.com # focus
+# 127.0.0.1 www.facebook.com # focus
+# 127.0.0.1 m.facebook.com # focus
+# 127.0.0.1 web.facebook.com # focus
+# 127.0.0.1 login.facebook.com # focus
+# 127.0.0.1 static.xx.fbcdn.net # focus
+# 127.0.0.1 connect.facebook.net # focus
+# 127.0.0.1 graph.facebook.com # focus
+# 127.0.0.1 apps.facebook.com # focus
+# 127.0.0.1 business.facebook.com # focus
+# 127.0.0.1 fb.com # focus
+# 127.0.0.1 www.fb.com # focus
+# 127.0.0.1 fb.watch # focus
+# 127.0.0.1 www.fb.watch # focus
+
+# ===== Instagram =====
+# 127.0.0.1 instagram.com # focus
+# 127.0.0.1 www.instagram.com # focus
+# 127.0.0.1 cdninstagram.com # focus
+
+# ===== Threads =====
+# 127.0.0.1 threads.com # focus
+# 127.0.0.1 threads.net # focus
+# 127.0.0.1 www.threads.net # focus
+# 127.0.0.1 www.threads.com # focus
+
+# ===== TikTok =====
+# 127.0.0.1 tiktok.com # focus
+# 127.0.0.1 www.tiktok.com # focus
+# 127.0.0.1 m.tiktok.com # focus
+# 127.0.0.1 api.tiktok.com # focus
+
+# ===== X (Twitter) =====
+# 127.0.0.1 twitter.com # focus
+# 127.0.0.1 www.twitter.com # focus
+# 127.0.0.1 mobile.twitter.com # focus
+
+# ===== movie =====
+# 127.0.0.1 dlive.tv # focus
+# 127.0.0.1 kick.com # focus
+
+# ===== bilibili =====
+# 127.0.0.1 www.bilibili.com # focus
+# 127.0.0.1 bilibili.com # focus
+# 127.0.0.1 api.bilibili.com # focus
+# 127.0.0.1 s1.hdslb.com # focus
+# 127.0.0.1 i0.hdslb.com # focus
+# 127.0.0.1 i1.hdslb.com # focus
+# 127.0.0.1 i2.hdslb.com # focus
+# 127.0.0.1 i3.hdslb.com # focus
+
+# ===== Twitch =====
+# 127.0.0.1 twitch.tv # focus
+# 127.0.0.1 www.twitch.tv # focus
+# 127.0.0.1 m.twitch.tv # focus
+# 127.0.0.1 static-cdn.jtvnw.net # focus
+# 127.0.0.1 vod-secure.twitch.tv # focus
