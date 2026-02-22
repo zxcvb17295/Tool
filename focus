@@ -85,7 +85,9 @@ else # off
     # Comment out lines with the tag if they are not already commented.
     # This prevents adding multiple '##'.
     sed -i '' "/$TAG/ { /^\s*#/! s/^/# /; }" "$HOSTS_FILE"
+    echo ""
     echo -e "  ${RED}${BOLD}🔓  阻擋已解除。希望這是值得的。${RESET}"
+    echo ""
 fi
 
 # 5. Flush DNS Cache on macOS for changes to take effect immediately
